@@ -89,7 +89,7 @@ namespace Game1
                 {
 
                     save++;
-                    System.Media.SoundPlayer playerr = new System.Media.SoundPlayer("Properties.Resources.GunEmpty");
+                    System.Media.SoundPlayer playerr = new System.Media.SoundPlayer(Resource1.GunEmpty);
                     playerr.Play();
                     enableDisableFB = true;
                     enableDisableFAB = true;
@@ -101,7 +101,7 @@ namespace Game1
                     if (randNumber1 == gunChamberArr[5])
                     {
 
-                        System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.revolver");
+                        System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.revolver);
                         player.Play();
                         save++;
                         save -= 1;
@@ -118,7 +118,7 @@ namespace Game1
                 else
                 {
 
-                    System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.revolver");
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.revolver);
                     player.Play();
                     hit++;
                     enableDisableFB = false;
@@ -142,7 +142,7 @@ namespace Game1
                 if (randomnumber == gunChamberArr[5] || counterVariable == 5)                        //In this if/else we are checking that bullet hits or not
                 {
 
-                    System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.revolver");
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.revolver);
                     player.Play();
                     hit++;
                     enableDisableFB = false;
@@ -159,7 +159,7 @@ namespace Game1
                 else if(clickCountVariable == 2)
                 {
 
-                    System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.revolver");
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.revolver);
                     player.Play();
                     hit++;
                     enableDisableFB = false;
@@ -177,7 +177,7 @@ namespace Game1
                 {
 
                     save++;
-                    System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Revolver.GunEmpty");
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.GunEmpty);
                     player.Play();
                     enableDisableFB = true;
                     enableDisableFAB = true;
@@ -212,7 +212,7 @@ namespace Game1
         {
 
             obj.loadBulletInGun();
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.GunEmpty");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.GunEmpty);
             player.Play();
             loadBullet.Enabled = false;                        //This click Function calls load bullet function.
             spinChambers.Enabled = true;
@@ -225,7 +225,7 @@ namespace Game1
         {
 
             SCnum = obj.spinGunChamber();
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.mag");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.mag);
             player.Play();
             spinChambers.Enabled = false;                     //This click function will call spin Chamber function.
             fireaway.Enabled = true;
@@ -261,7 +261,7 @@ namespace Game1
         private void playAgain_Click(object sender, EventArgs e)
         {
 
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer("Properties.Resources.GameOver");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Resource1.GameOver);
             player.Play();
             string message = "Game Is Over ";
             string title = "Russian Roulette";
