@@ -28,24 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.playAgain = new System.Windows.Forms.Button();
             this.fireGun = new System.Windows.Forms.Button();
             this.spinChambers = new System.Windows.Forms.Button();
-            this.loadBullet = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.fireaway = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,13 +51,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.fireaway = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loadBullet = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,7 +80,7 @@
             this.playAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playAgain.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playAgain.ForeColor = System.Drawing.Color.White;
-            this.playAgain.Image = ((System.Drawing.Image)(resources.GetObject("playAgain.Image")));
+            this.playAgain.Image = global::Game1.Resource1.playAgain_Image;
             this.playAgain.Location = new System.Drawing.Point(4, 366);
             this.playAgain.Name = "playAgain";
             this.playAgain.Size = new System.Drawing.Size(149, 90);
@@ -98,7 +97,7 @@
             this.fireGun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fireGun.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fireGun.ForeColor = System.Drawing.Color.White;
-            this.fireGun.Image = ((System.Drawing.Image)(resources.GetObject("fireGun.Image")));
+            this.fireGun.Image = global::Game1.Resource1.fireGun_Image;
             this.fireGun.Location = new System.Drawing.Point(3, 264);
             this.fireGun.Name = "fireGun";
             this.fireGun.Size = new System.Drawing.Size(149, 85);
@@ -115,7 +114,7 @@
             this.spinChambers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.spinChambers.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spinChambers.ForeColor = System.Drawing.Color.White;
-            this.spinChambers.Image = ((System.Drawing.Image)(resources.GetObject("spinChambers.Image")));
+            this.spinChambers.Image = global::Game1.Resource1.spinChambers_Image;
             this.spinChambers.Location = new System.Drawing.Point(3, 176);
             this.spinChambers.Name = "spinChambers";
             this.spinChambers.Size = new System.Drawing.Size(149, 82);
@@ -125,23 +124,6 @@
             this.spinChambers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.spinChambers.UseVisualStyleBackColor = true;
             this.spinChambers.Click += new System.EventHandler(this.spinChambers_Click);
-            // 
-            // loadBullet
-            // 
-            this.loadBullet.FlatAppearance.BorderSize = 0;
-            this.loadBullet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadBullet.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadBullet.ForeColor = System.Drawing.Color.White;
-            this.loadBullet.Image = ((System.Drawing.Image)(resources.GetObject("loadBullet.Image")));
-            this.loadBullet.Location = new System.Drawing.Point(4, 82);
-            this.loadBullet.Name = "loadBullet";
-            this.loadBullet.Size = new System.Drawing.Size(146, 88);
-            this.loadBullet.TabIndex = 1;
-            this.loadBullet.Text = "Load Bullet";
-            this.loadBullet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.loadBullet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.loadBullet.UseVisualStyleBackColor = true;
-            this.loadBullet.Click += new System.EventHandler(this.loadBullet_Click);
             // 
             // panel3
             // 
@@ -193,6 +175,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(778, 141);
             this.panel2.TabIndex = 1;
+            // 
+            // fireaway
+            // 
+            this.fireaway.FlatAppearance.BorderSize = 0;
+            this.fireaway.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fireaway.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fireaway.ForeColor = System.Drawing.Color.White;
+            this.fireaway.Image = global::Game1.Resource1.fireaway_Image;
+            this.fireaway.Location = new System.Drawing.Point(9, 3);
+            this.fireaway.Name = "fireaway";
+            this.fireaway.Size = new System.Drawing.Size(115, 95);
+            this.fireaway.TabIndex = 4;
+            this.fireaway.Text = "fire Away!!";
+            this.fireaway.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.fireaway.UseVisualStyleBackColor = true;
+            this.fireaway.Click += new System.EventHandler(this.fireaway_Click);
             // 
             // label14
             // 
@@ -261,17 +259,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Bullet has been Fired.";
             this.label7.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(241, 134);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 183);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // panel4
             // 
@@ -348,21 +335,33 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Scores";
             // 
-            // fireaway
+            // pictureBox1
             // 
-            this.fireaway.FlatAppearance.BorderSize = 0;
-            this.fireaway.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fireaway.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fireaway.ForeColor = System.Drawing.Color.White;
-            this.fireaway.Image = ((System.Drawing.Image)(resources.GetObject("fireaway.Image")));
-            this.fireaway.Location = new System.Drawing.Point(9, 3);
-            this.fireaway.Name = "fireaway";
-            this.fireaway.Size = new System.Drawing.Size(115, 95);
-            this.fireaway.TabIndex = 4;
-            this.fireaway.Text = "fire Away!!";
-            this.fireaway.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.fireaway.UseVisualStyleBackColor = true;
-            this.fireaway.Click += new System.EventHandler(this.fireaway_Click);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::Game1.Resource1.pictureBox1_Image;
+            this.pictureBox1.Location = new System.Drawing.Point(241, 134);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(307, 183);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // loadBullet
+            // 
+            this.loadBullet.FlatAppearance.BorderSize = 0;
+            this.loadBullet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadBullet.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadBullet.ForeColor = System.Drawing.Color.White;
+            this.loadBullet.Image = global::Game1.Resource1.loadBullet_Image;
+            this.loadBullet.Location = new System.Drawing.Point(4, 82);
+            this.loadBullet.Name = "loadBullet";
+            this.loadBullet.Size = new System.Drawing.Size(146, 88);
+            this.loadBullet.TabIndex = 1;
+            this.loadBullet.Text = "Load Bullet";
+            this.loadBullet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.loadBullet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.loadBullet.UseVisualStyleBackColor = true;
+            this.loadBullet.Click += new System.EventHandler(this.loadBullet_Click);
             // 
             // form1
             // 
@@ -379,7 +378,6 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Russian Roulette";
@@ -388,11 +386,11 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

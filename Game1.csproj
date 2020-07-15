@@ -89,6 +89,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fireaway.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireGun.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadBullet.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox1.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playAgain.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinChambers.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.wav" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\GunEmpty.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -96,9 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\revolver.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GameOver.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

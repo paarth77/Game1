@@ -65,7 +65,7 @@ namespace Game1 {
         /// </summary>
         internal static System.Drawing.Bitmap fireaway_Image {
             get {
-                object obj = ResourceManager.GetObject("fireaway.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("fireaway_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace Game1 {
         /// </summary>
         internal static System.Drawing.Bitmap fireGun_Image {
             get {
-                object obj = ResourceManager.GetObject("fireGun.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("fireGun_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,7 +103,7 @@ namespace Game1 {
         /// </summary>
         internal static System.Drawing.Bitmap loadBullet_Image {
             get {
-                object obj = ResourceManager.GetObject("loadBullet.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("loadBullet_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -122,7 +122,7 @@ namespace Game1 {
         /// </summary>
         internal static System.Drawing.Bitmap pictureBox1_Image {
             get {
-                object obj = ResourceManager.GetObject("pictureBox1.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("pictureBox1_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -132,7 +132,7 @@ namespace Game1 {
         /// </summary>
         internal static System.Drawing.Bitmap playAgain_Image {
             get {
-                object obj = ResourceManager.GetObject("playAgain.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("playAgain_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -151,7 +151,7 @@ namespace Game1 {
         /// </summary>
         internal static System.Drawing.Bitmap spinChambers_Image {
             get {
-                object obj = ResourceManager.GetObject("spinChambers.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("spinChambers_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
